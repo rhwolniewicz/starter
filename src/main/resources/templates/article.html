@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Article</title>
+</head>
+<body>
+
+<section class="article">
+    <header class="article-header">
+        <h1 class="article-title" th:test="${article.title}">Some awesome blog post</h1>
+        <p class="article-meta">
+            By  <strong><span th:text="${article.author.firstname}">Winne</span></strong>
+            , on <strong><span th:text="${article.addedAt}">Yesterday</span></strong></p>
+    </header>
+
+    <div class="article-description">
+        <span th:text="${article.headline}">Awesomeness</span>
+
+        <span th:text="${article.content}">Once upon a team there was a bear.</span>
+    </div>
+</section>
+
+</body>
+</html>

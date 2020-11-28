@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Test WebApp</title>
+</head>
+<body>
+
+<h1 th:text="${title}">Test Title</h1>
+
+<div class="articles">
+    <section th:each="article : ${articles}">
+        <header class="article-header">
+            <h2 class="article-title"><a th:href="@{'/article/' + ${article.slug}}"><span th:text="${article.title}">A Blog Title</span></a></h2>
+            <div class="article-meta">
+                By <strong><span th:text="${article.author.firstname}">Winnie ther Pooh</span></strong>
+                , on
+                <strong><span th:text="${article.addedAt}">2020-11-28 5pm</span></strong>
+            </div>
+        </header>
+        <dev class="article-description">
+            <span th:text="${article.headline}">Some awesome post</span>
+        </dev>
+    </section>
+</div>
+
+</body>
+</html>
