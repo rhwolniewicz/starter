@@ -1,0 +1,4 @@
+This starter projects is based on https://spring.io/guides/tutorials/spring-boot-kotlin/, with the following changes:
+
+* We are using Thymeleaf instead of Mustache.
+* We are using Gradle instead of Maven.
