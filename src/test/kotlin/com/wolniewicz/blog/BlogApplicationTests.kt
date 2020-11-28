@@ -1,10 +1,10 @@
-package com.wolniewicz.starter
+package com.wolniewicz.blog
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
-class StarterApplicationTests {
+class BlogApplicationTests {
 
 	@Test
 	fun contextLoads() {

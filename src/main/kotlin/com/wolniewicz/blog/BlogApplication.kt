@@ -1,11 +1,11 @@
-package com.wolniewicz.starter
+package com.wolniewicz.blog
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class StarterApplication
+class BlogApplication
 
 fun main(args: Array<String>) {
-	runApplication<StarterApplication>(*args)
+	runApplication<BlogApplication>(*args)
 }
