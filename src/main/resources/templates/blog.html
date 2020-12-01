@@ -10,6 +10,16 @@
 <h1 th:text="${title}">Test Title</h1>
 
 <div class="articles">
+    <section>
+        <header class="banner">
+            <h2 class="banner-title" th:text="${banner.title}"></h2>
+        </header>
+        <div class="banner-content">
+            <span th:text="${banner.content}"></span>
+        </div>
+    </section>
+
+
     <section th:each="article : ${articles}">
         <header class="article-header">
             <h2 class="article-title"><a th:href="@{'/article/' + ${article.slug}}"><span th:text="${article.title}">A Blog Title</span></a></h2>

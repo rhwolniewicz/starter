@@ -7,6 +7,7 @@ plugins {
 	kotlin("plugin.spring") version "1.4.10"
 	kotlin("plugin.jpa") version "1.4.10"
 	kotlin("plugin.allopen") version "1.4.10"
+	kotlin("kapt") version "1.4.10"
 }
 
 group = "com.wolniewicz"
@@ -35,6 +36,8 @@ dependencies {
 	testImplementation("org.junit.jupiter:junit-jupiter-api")
 	testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
 	testImplementation("com.ninja-squad:springmockk:3.0.0")
+
+	kapt("org.springframework.boot:spring-boot-configuration-processor")
 }
 
 tasks.withType<Test> {
